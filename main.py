@@ -15,6 +15,7 @@ from router import (
     reviews,
     statistics,
     test_data,
+    postlikes,
 )
 from db import models
 from db.database import engine
@@ -41,6 +42,7 @@ app.include_router(orders.router)
 app.include_router(order_lines.router)
 app.include_router(test_data.router)
 app.include_router(reviews.router)
+app.include_router(postlikes.router)
 
 # This enables comunication between localhost 8000 and 3000
 origins = ["*"]
