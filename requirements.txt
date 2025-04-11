@@ -8,3 +8,4 @@ pydantic
 python-multipart
 python-jose
 websockets
+email-validator
